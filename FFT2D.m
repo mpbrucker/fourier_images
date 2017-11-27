@@ -1,0 +1,10 @@
+img1 = rgb2gray(imread('image1.jpg'));
+img_fft = fftshift(fft2(img1, 512, 512));
+img_mags = log(abs(img_fft));
+clf;
+subplot(1,2,1);
+imshow(img1);
+title('Original');
+subplot(1,2,2);
+imshow(img_mags./max(img_mags));
+title('FFT of image');
