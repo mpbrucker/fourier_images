@@ -7,7 +7,7 @@ function [ycbcrIMG] = rgbToYcbcr(rgbIMG)
     for r = 1:n
         for c = 1:m
             rgb = rgbIMG(r,c,:);
-            rgb = double(reshape(rgb,[3,1]));
+            rgb = reshape(rgb,[3,1]);
             ycc = (trans*rgb) + shift;
             yImage(r,c,:) = ycc;
         end

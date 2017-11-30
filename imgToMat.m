@@ -21,7 +21,7 @@ function [img, rows, collumns] = imgToMat(imgName)
         image = horzcat(image,zMAT);
         r = extra;
     end
-    img = int8(image);
+    img = double(image);
     rows = r;
     collumns = c;
 end
