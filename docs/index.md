@@ -1,6 +1,4 @@
 ---
 layout: default
-title: Our Website
+title: The Discrete Cosine Transform
 ---
-
-# Hi!
