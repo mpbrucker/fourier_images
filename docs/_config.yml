@@ -18,7 +18,7 @@ description: Applying the Discrete Fourier Transform and Discrete Cosine Transfo
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mpbrucker
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 
 # Build settings
 markdown: kramdown
