@@ -18,9 +18,14 @@ uncentered = uncenterIMG(img_reconstruct);
 compressed_img = ycbcrToRgb(uncentered);
 recon_img = matToImg(compressed_img, rows+8, columns);
 
+
+
 subplot(1,2,1);
 imshow(orig_img);
+title(strcat('Number of bytes unencoded: ',string(prod(size(orig_img))*8)));
+
 subplot(1,2,2);
 imshow(uint8(recon_img));
+title(strcat('Number of bytes encoded: ',string(ceil((size(codedY,2)+size(codedCB,2)+size(codedCR,2))/8))))
 
 end
