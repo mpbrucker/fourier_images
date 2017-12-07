@@ -3,3 +3,7 @@ img {
   display: block;
   margin: auto auto;
 }
+
+.page-header {
+  background: url('background.png');
+}
