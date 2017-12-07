@@ -28,9 +28,13 @@ This function shifts all the values to a range from -128 to 127 so that the matr
 
 ## 4. Convert into 8x8 Blocks
 
-Next, the image is broken up into 8x8 or smaller chunks. To understand why this is done, we can think about the number of operations needed to compute the DCT.  
+Next, the image is broken up into 8x8 or smaller chunks and stacked into a list, as shown below.
+
+![An illustration of blocking.](blocking.png)
+
+ To understand why this is done, we can think about the number of operations needed to compute the DCT.  
 **A Note on Computational Complexity**  
-In computer science, the *computational complexity* of a function or algorithm is, in simplest terms, the number of operations needed to compute the function on an input of an arbitrary size. We can look at the computational complexity of the DCT to understand why it’s advantageous to break an image into smaller chunks. The operation of multiplying an NxN image matrix by an NxN DCT matrix requires a number of operation proportional to N^3; as a result, it's advantageous to break the image into smaller chunks and take the DCT of each of the chunks.
+In computer science, the *computational complexity* of a function or algorithm is, in simplest terms, the number of operations needed to compute the function on an input of an arbitrary size. We can look at the computational complexity of the DCT to understand why it’s advantageous to break an image into smaller chunks. The operation of multiplying an NxN image matrix by an NxN DCT matrix requires a number of operation proportional to $N^3$; as a result, it's advantageous to break the image into smaller chunks and take the DCT of each of the chunks.
 
 ## 5. Take the DCT
 
