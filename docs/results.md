@@ -8,8 +8,12 @@ Through our implementation, we discovered that based on the quality we want afte
 ### The results of our project are summarized in the following images:
 
 These two sets of images have a high compression so a low final image quality.
+
+##### 58X compression
 ![Image 1.](CompressionSizeQuality10.png)
+##### 58X compression
 ![Image 2.](CompressionSizeQuality10_2.png)
 
-These images have a lower comperession but a better final image quality.
+This image is a higher quality so it looks good even after a lot of compression.
+##### 59X compression
 ![Image 3.](CompressionSizeQuality50.png)
