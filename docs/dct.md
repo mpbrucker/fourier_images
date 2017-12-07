@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The Discrete Cosine Transform
+use_math: true
 ---
 
 ### Transforms for Image Compression: The Discrete Cosine Transform
@@ -10,6 +11,10 @@ When it comes to image compression, the DFT isn't ideal. It involves a lot of co
 #### Properties of the Discrete Cosine Transform
 
 The DCT has a number of properties which differentiate it from the DFT. The first property is fairly noticeable, if we look at the definition of the DCT:
+
+$$
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+$$
 
 ![The definition of the DCT.](dct.png)
 
