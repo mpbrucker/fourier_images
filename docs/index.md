@@ -11,7 +11,7 @@ This website documents our final project for QEA Fall 2017.
 ### Project Goal
 Our goal in this project was to create our own implementation of JPEG compression in MATLAB by exploring various two-dimensional frequency transforms of images. An example of our compression is shown below.
 
-![Image 1.](CompressionSizeQuality10.png)
+![Image 1.](compression1)
 
 ### About Our Project
 Our approach to this project was twofold; first, we learned about two-dimensional Discrete Fourier Transforms of images. We looked at what a two-dimensional Fourier transform can look like and how various one-dimensional filters in the frequency domain translate to 2D. Then we learned about the Discrete Cosine Transform, which is similar to the DFT, but has properties that make it more useful for image compression. Finally, we applied our knowledge of DCTs by building our own implementation of JPEG compression in MATLAB using the DCT. Explore the rest of the tabs to see our process and find out what we learned!

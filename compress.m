@@ -20,12 +20,24 @@ recon_img = matToImg(compressed_img, rows+8, columns);
 
 
 
+
 subplot(1,2,1);
 imshow(orig_img);
-title(strcat('Number of bytes unencoded: ',string(prod(size(orig_img)))));
+title(strcat('Number of bytes unencoded: ',string(prod(size(orig_img)))), 'FontSize', 24);
 
 subplot(1,2,2);
 imshow(uint8(recon_img));
-title(strcat('Number of bytes encoded: ',string(ceil((size(codedY,2)+size(codedCB,2)+size(codedCR,2))/8))))
+
+tot_size = size(dictY,1)+size(dictCB,1)+size(dictCR,1);
+for i=1:size(dictY,1)
+    tot_size = tot_size + ceil(size(dictY{i,2},2)/8);
+end
+for i=1:size(dictCB,1)
+    tot_size = tot_size + ceil(size(dictCB{i,2},2)/8);
+end
+for i=1:size(dictCR,1)
+    tot_size = tot_size + ceil(size(dictCR{i,2},2)/8);
+end
+title(strcat('Number of bytes encoded: ',string(ceil((size(codedY,2)+size(codedCB,2)+size(codedCR,2))/8)+tot_size)), 'FontSize', 24)
 
 end
