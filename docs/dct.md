@@ -41,14 +41,18 @@ $$
 \end{equation}
 $$
 
-where N is the size of the image. The DCT matrix then becomes:  
+where N is the size of the image. The DCT matrix then becomes:
+
 $$
 \begin{equation}
     \bf{V} = \begin{bmatrix}
         \bf{v_1 v_2 v_3} \ldots \bf{v_n}
     \end{bmatrix}
-\end{equation}$$  
+\end{equation}
+$$  
+
 Note that $\alpha_i$ is a coefficient equal to:  
+
 $$
 \begin{equation}
     \alpha_i =
@@ -58,8 +62,9 @@ $$
   \end{cases}
 \end{equation}
 $$  
+
 The purpose of $\alpha_i$ is to make the DCT matrix orthonormal; this way, we can transpose the DCT matrix to find its inverse. In order to actually take the DCT of an image, we simply tak $VXV^T$, where X is the original image matrix. In the 2D DCT, the constant component of the data is in the top left, with frequency increasing down and to the right.
 
 ![The DCT of an image.](dct_img.PNG)
 
-We mentioned earlier that in the DCT, most of the information is concentrated in a few low frequencies. This can be seen in the above figure; the highest DCT coefficients (which are the brightest pixels) are in the top-left of the DCT matrix, which correspond to the low-frequency components of the DCT.
+We mentioned earlier that in the DCT, most of the information is concentrated in a few low frequencies. This can be seen in the above figure; the highest DCT coefficients, which are the brightest pixels, are in the top-left of the DCT matrix, which correspond to the low-frequency components of the DCT.

@@ -17,7 +17,7 @@ We wanted our program to be robust enough to take in any image, but only certain
 Generally, the color of an image is defined by its RGB (red, green and blue) values from 0 to 255. However, this is not the only way to define the color of a pixel. YCbCr encodes the color in terms of luminance, chrominance red and chrominance blue. YCbCr is used by JPEG compression because of the discovery that our eyes are much more responsive to changes in light than to changes in color. So in order to save more important information it makes sense to save information about the brightness of an image - that way, we can get rid of a lot of color information without creating a noticeable difference in the image.
 
 $$
-\begin{bmatrix}Y \\Cb \\Cr \end{bmatrix} = \begin{bmatrix}  0.299 & 0.587 & 0.114 -0.169 & -0.334 & 0.500 \\ 0.500 & -0.419 & -0.081 \end{bmatrix} \begin{bmatrix} R \\ G \\ B \end{bmatrix} + \begin{bmatrix} 0 \\ 128 \\ 128 \end{bmatrix}
+\begin{bmatrix}Y \\Cb \\Cr \end{bmatrix} = \begin{bmatrix}  0.299 & 0.587 & 0.114 \\ -0.169 & -0.334 & 0.500 \\ 0.500 & -0.419 & -0.081 \end{bmatrix} \begin{bmatrix} R \\ G \\ B \end{bmatrix} + \begin{bmatrix} 0 \\ 128 \\ 128 \end{bmatrix}
 $$
 
 This function converts an RGB matrix to a YCbCr matrix by iterating over every pixel and transforming it by the appropriate operation, as can be seen in the image above. This turns the three NxN RGB matrices to three NxN YCbCr matrices of values from [0, 255].
