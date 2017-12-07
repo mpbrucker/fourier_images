@@ -13,10 +13,9 @@ When it comes to image compression, the DFT isn't ideal. It involves a lot of co
 The DCT has a number of properties which differentiate it from the DFT. The first property is fairly noticeable, if we look at the definition of the DCT:
 
 $$
-   |\psi_1\rangle = a|0\rangle + b|1\rangle
+ X_{i,j} = \sum_{n=0}^{N-1} \sum_{m=0}^{M-1} x_{n,m}cos(\frac{\pi}{N}(n+\frac{1}{2})i)cos(\frac{\pi}{M}(m+\frac{1}{2})j)
 $$
 
-![The definition of the DCT.](dct.png)
 
 we can see that the DCT only uses cosine waves, and thus the output of the DCT is always real. Other properties of the DCT have important implications for how and where it's used. The first is related to properties of signals that the DCT is usually applied to. Real-world signals tend to be "pink" in nature, meaning that the power of a signal is proportional to *1/frequency*. The DCT has high energy compaction, which means that low-frequency content of a signal is highly concentrated together in a few terms. This is useful for most real-world signals, as it means that most of the power of the signal will be concentrated in the first few terms of the DCT.
 

@@ -22,7 +22,7 @@ recon_img = matToImg(compressed_img, rows+8, columns);
 
 subplot(1,2,1);
 imshow(orig_img);
-title(strcat('Number of bytes unencoded: ',string(prod(size(orig_img))*8)));
+title(strcat('Number of bytes unencoded: ',string(prod(size(orig_img)))));
 
 subplot(1,2,2);
 imshow(uint8(recon_img));
