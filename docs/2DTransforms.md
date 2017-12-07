@@ -1,3 +1,8 @@
+---
+layout: default
+title: 2D Transforms
+---
+
 # Two-Dimensional Transforms and Image Processing
 
 The discrete Fourier transform transforms a finite length signal that starts as a function of time into a function of frequency. Just like any one dimensional signal (ex. sound wave) can be represented as a combination of one dimensional frequencies see Figure~\ref{fig:wave} and any two dimensional signals (ex. image) can be represented as a combination of two-dimensional frequencies see Figure~\ref{fig:imagewave}. A one-dimensional signal is just a list of values associated with specific moments in time. A two dimensional signal can be represented as a two dimensional matrix of values. That is why a gray scale image can be considered a two-dimensional signal.
