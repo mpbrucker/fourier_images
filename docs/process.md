@@ -34,7 +34,7 @@ In computer science, the *computational complexity* of a function or algorithm i
 
 ## 5. Take the DCT
 
-At this point, we're ready to take the DCT of each block. In our implementation of JPEG, we wrote our own implementation of the DCT based a DCT matrix that we compute manually. For more information on how the DCT works, look at our [page on the DCT.](/dct)
+At this point, we're ready to take the DCT of each block. In our implementation of JPEG, we wrote our own implementation of the DCT based a DCT matrix that we compute manually. For more information on how the DCT works, look at our [page on the DCT.](/fourier_images/dct)
 
 ## 6. Quantization
 
