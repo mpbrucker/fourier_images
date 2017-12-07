@@ -18,7 +18,8 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% for page in site.pages %}
-        {% if page.path != "assets/css/style.scss" %}
+        <a href="{{site.baseurl}}" class="btn">Home</a>
+        {% if page.path != "assets/css/style.scss" and page.title != "Home" %}
           {% assign path_name = page.path | remove: ".md" %}
           <a href="{{path_name}}" class="btn">{{page.title}}</a>
         {% endif %}
