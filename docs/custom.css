@@ -1,9 +1,15 @@
 img {
-  max-width: 500px;
+  max-width: 350px !important;
   display: block;
   margin: auto auto;
 }
 
 .page-header {
   background: url('background.png');
+  background-position: center;
+}
+
+.btn {
+  color: #ffffff !important;
+  font-weight: bold;
 }
