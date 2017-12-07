@@ -63,7 +63,7 @@ $$
 \end{equation}
 $$  
 
-The purpose of $\alpha_i$ is to make the DCT matrix orthonormal; this way, we can transpose the DCT matrix to find its inverse. In order to actually take the DCT of an image, we simply tak $VXV^T$, where X is the original image matrix. In the 2D DCT, the constant component of the data is in the top left, with frequency increasing down and to the right.
+The purpose of $\alpha_i$ is to make the DCT matrix orthonormal; this way, we can transpose the DCT matrix to find its inverse. In order to actually take the DCT of an image, we simply take $VXV^T$, where $X$ is the original image matrix. In the 2D DCT, the constant component of the data is in the top left, with frequency increasing down and to the right.
 
 ![The DCT of an image.](dct_img.PNG)
 
