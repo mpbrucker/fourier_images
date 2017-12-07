@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Process of Compression
+use_math: true
 ---
 
 # JPEG Compression Implementation
